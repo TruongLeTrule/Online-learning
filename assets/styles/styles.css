@@ -3,8 +3,7 @@
 }
 
 :root {
-  --primary-color: #def6f5;
-  --button-color: #2ac9bf;
+  --primary-color: #1ebfc1;
 }
 
 html {
@@ -19,6 +18,59 @@ body {
 /* Common */
 .main-content {
   width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: #2f3a3b;
+  text-decoration: none;
 }
 
 /* Header */
+.header.fixed {
+  position: sticky;
+  top: -32px;
+}
+
+.header {
+  padding-top: 52px;
+  padding-bottom: 20px;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.header ul {
+  margin-left: 235px;
+  display: flex;
+  gap: 40px;
+}
+
+.header li .active {
+  font-weight: 600;
+}
+
+.header .cta-group {
+  margin-left: 177px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header .cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: var(--primary-color);
+  width: 108px;
+  height: 48px;
+  border: 1px solid var(--primary-color);
+  border-radius: 6px;
+}
